@@ -23,7 +23,7 @@ mongoose.set('useCreateIndex', true);
 app.use(express.urlencoded({ extended: true }));
 
 app.use(session({
-    secret: "Our little secret.",
+    secret: "Some password here... (env) ",
     resave: false,
     saveUninitialized: true
 }));
